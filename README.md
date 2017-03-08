@@ -1,2 +1,3 @@
-# fjr17
-Epochenschwellen als Phasen beschleunigter literarischer Entwicklung? (Forum Junge Romanistik, Göttingen 2017)
+# dramenanalyse-dhd
+
+Panel "Aktuelle Herausforderungen der digitalen Dramenanalyse" (Bern, DHd-Konferenz, 2017)
