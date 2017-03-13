@@ -51,13 +51,13 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
 ## Überblick
 <br/>
 * Fragestellung, Hypothesen und Ziele
-* Die Textsammlung
-* Die Methoden
+* Textsammlung
+* Methoden
 * Ergebnisse
 * Fazit
 
 ---
-## Fragestellung, Hypothesen und Ziele
+## Fragestellung, Hypothese und Ziele
 
 --
 ### Literaturgeschichtliche Fragestellung
@@ -108,24 +108,25 @@ Neubenennung eines Sinnabschnitts führt?"
 > "eine Frage der Kombination und ihrer Wahrnehmung"
 
 --
-### Ziele
+### Ziele: Veränderungen nachvollziehen
 <br/>
 
-* Veränderungen nachvollziehen
+* mit Hilfe quantitativer, digitaler Methoden
+* auf einer breiten Textbasis
+* formale Aspekte &amp; thematische Entwicklungen über die Zeit
 
- * mit Hilfe quantitativer, digitaler Methoden
- * auf einer breiten Textbasis
- * formale Aspekte &amp; thematische Entwicklungen über die Zeit
-	
-* mögliche Epochenschwellen ermitteln, wo Veränderungen...
+--
+### Ziele: Mögliche Epochenschwellen ermitteln
+<br/>
+wo Veränderungen...
 
- * sich verändern
- * besonders deutlich hervortreten
- * beschleunigt sind
+* sich verändern
+* besonders deutlich hervortreten
+* beschleunigt sind
 
 
 ---
-## Die Textsammlung
+## Textsammlung
 
 * französischer Roman im 20. Jahrhundert
 * 1900 bis 1999
@@ -149,24 +150,64 @@ Neubenennung eines Sinnabschnitts führt?"
 ---
 ## Methoden
 <br/>
+Nachfolgeforschung zu Ted Underwood 2015 <br />
+<a href="https://tedunderwood.com/2015/10/03/can-we-date-revolutions-in-the-history-of-literature-and-music/">"Can we date revolutions in the history of literature and music?"</a>
 
+Hier:
+* Topics über die Zeit
+* Zeitausdrücke über die Zeit
+
+--
+### Topic Modeling
+
+--
+### Temporal Tagging
+
+* Ermittlung von Zeitausdrücken in den Roman-Texten mit <a href="https://github.com/HeidelTime/heideltime">HeidelTime</a><br/>
+ (z.B. "le 16 janvier", "cet après-midi", "à neuf heures")
+* Verteilungen von relativen und proportionalen Häufigkeiten der Zeitausdrücke in den Romanen
+
+--
+### Messen von Veränderung über die Zeit
+
+* Kosinus-Ähnlichkeit
+* Foote-Neuheit
 
 ---
 ## Ergebnisse
+
+
+--
+### Kosinus-Ähnlichkeiten &amp; Foote-Neuheiten
 <table>
   <tbody>
     <tr>
-      <td><div style="text-align:left;"><a href="img/topics_cosim_v2.png"><img alt="" src="img/topics_cosim_v2.png" height="250"></a></div></td>
-      <td><div style="text-align:right;"><a href="img/tpx_cosim_2.png"><img alt="" src="img/tpx_cosim_2.png" height="250"></a></div></td>
+      <td style="border: none; vertical-align: bottom; padding: 0 20px;">
+		<div style="text-align:center;">
+			<a href="img/topics_cosim_v2.png">
+				  <img alt="" src="img/topics_cosim_v2.png" width="330" style="margin: 0;">
+			</a>
+		</div>
+	  </td>
+      <td style="border: none; vertical-align: bottom; padding: 0 20px;">
+		<div style="text-align:center;">
+			<a href="img/cosim-tpx-2.png">
+				  <img alt="" src="img/cosim-tpx-2.png" width="330" style="margin: 0;">
+			</a>
+		</div>
+	  </td>
     </tr>
     <tr>
-      <td><div style="text-align:left;"><a href="img/topics_novelties_v2.png"><img alt="" src="img/topics_novelties_v2.png" height="250"></a></div></td>
-      <td><div style="text-align:right;"><a href="img/tpx_novelties-cosine_2.png"><img alt="" src="img/tpx_novelties-cosine_2.png" height="250"></a></div></td>
+      <td style="vertical-align:top; padding: 0;"><div style="text-align:center;"><a href="img/topics_novelties_v2.png"><img alt="" src="img/topics_novelties_v2.png" width="290" style="position: relative; left: 7px;"></a></div></td>
+      <td style="vertical-align:top; padding: 0;"><div style="text-align:center;"><a href="img/novelties-tpx-cosine-2.png"><img alt="" src="img/novelties-tpx-cosine-2.png" width="300"></a></div></td>
     </tr>
   </tbody>
 </table>
 
+--
+### Zeitausdrücke: <br/>Kosinus-Distanz zur Grundlinie 1900-1909
 
+<a href="img/dist_to_baseline_tpx.svg"><img alt="" src="img/dist_to_baseline_tpx.svg" height="500"/></a>
 
 ---
 ## Fazit
