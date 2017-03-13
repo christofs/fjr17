@@ -1,3 +1,3 @@
-# dramenanalyse-dhd
+# Epochenschwellen @FJR2017
 
-Panel "Aktuelle Herausforderungen der digitalen Dramenanalyse" (Bern, DHd-Konferenz, 2017)
+Epochenschwellen als Phasen beschleunigter literarischer Entwicklung?
