@@ -164,7 +164,7 @@ Hier:
 ### Temporal Tagging
 
 * Ermittlung von Zeitausdrücken in den Roman-Texten mit <a href="https://github.com/HeidelTime/heideltime">HeidelTime</a><br/>
- (z.B. "le 16 janvier", "cet après-midi", "à neuf heures")
+ (z. B. "le 16 janvier", "cet après-midi", "à neuf heures")
 * Verteilungen von relativen und proportionalen Häufigkeiten der Zeitausdrücke in den Romanen
 
 --
@@ -172,6 +172,23 @@ Hier:
 
 * Kosinus-Ähnlichkeit
 * Foote-Neuheit
+
+--
+#### Kosinus-Ähnlichkeit
+* Einteilung des Zeitraumes z. B. in 2-Jahresschritte
+* Aggregieren der Werte (Topic-Verteilungen / Häufigkeiten von Zeitausdrücken)
+* Berechnen der paarweisen Ähnlichkeiten zwischen allen 2-Jahreszeiträumen
+* Kosinus-Ähnlichkeit als Maß für die Ähnlichkeit zwischen zwei Vektoren
+
+--
+#### Foote-Neuheit
+* Maß von Jonathan Foote (2000): <a href="http://www.fxpal.com/publications/FXPAL-PR-00-094.pdf">Foote Novelty</a>
+* ursprünglich für Musik entwickelt
+* Wo gibt es beschleunigte Veränderungen bzw. Umbrüche?
+* auf Grundlage der Kosinus-Ähnlichkeiten werden Neuheits-Werte ermittelt
+
+
+
 
 ---
 ## Ergebnisse
@@ -207,7 +224,7 @@ Hier:
 --
 ### Zeitausdrücke: <br/>Kosinus-Distanz zur Grundlinie 1900-1909
 
-<a href="img/dist_to_baseline_tpx.svg"><img alt="" src="img/dist_to_baseline_tpx.svg" height="500"/></a>
+<a href="img/dist_to_baseline_tpx.svg"><img alt="" src="img/dist_to_baseline_tpx_2.svg" height="500"/></a>
 
 ---
 ## Fazit
