@@ -126,10 +126,12 @@ wo Veränderungen...
 ---
 ## Textsammlung
 
+--
+### Textsammlung
+
 * französischer Roman im 20. Jahrhundert
 * 1900 bis 1999
-* mindestens 1 Roman pro Jahr
-
+* mindestens 1 Roman, meist 2-4 Romane pro Jahr
 
 --
 ### Autoren und Romane pro Jahr
@@ -148,47 +150,47 @@ wo Veränderungen...
 ---
 ## Methoden
 <br/>
-Nachfolgeforschung zu Ted Underwood 2015 <br />
+* Nachfolgeforschung zu Ted Underwood 2015 <br />
 <a href="https://tedunderwood.com/2015/10/03/can-we-date-revolutions-in-the-history-of-literature-and-music/">"Can we date revolutions in the history of literature and music?"</a>
-
-Hier:
-* Topics über die Zeit
-* Zeitausdrücke über die Zeit
+* Hier:
+    * Topics über die Zeit
+    * Zeitausdrücke über die Zeit
 
 --
 ### Topic Modeling
 <br/>
 <a href="img/Blei-2012.png"><img src="img/Blei-2012.png"></img></a>
 
-David Blei, "Probabilistic Topic Modeling", 2012.
+<small>David Blei, "Probabilistic Topic Modeling", 2012.</small>
 
 --
 ### Temporal Tagging
-
-* Ermittlung von Zeitausdrücken in den Roman-Texten mit <a href="https://github.com/HeidelTime/heideltime">HeidelTime</a><br/>
+<br/>
+* Ermittlung von Zeitausdrücken in den Roman-Texten mit <a href="https://github.com/HeidelTime/heideltime">HeidelTime</a> (Jannik Strötgen)<br/>
  (z. B. "le 16 janvier", "cet après-midi", "à neuf heures")
 * Verteilungen von relativen und proportionalen Häufigkeiten der Zeitausdrücke in den Romanen
 
 --
 ### Messen von Veränderung über die Zeit
-
+<br/>
 * Kosinus-Ähnlichkeit
 * Foote-Neuheit
 
 --
-#### Kosinus-Ähnlichkeit
+### Kosinus-Ähnlichkeit
+<br/>
 * Einteilung des Zeitraumes z. B. in 2-Jahresschritte
 * Aggregieren der Werte (Topic-Verteilungen / Häufigkeiten von Zeitausdrücken)
 * Berechnen der paarweisen Ähnlichkeiten zwischen allen 2-Jahreszeiträumen
 * Kosinus-Ähnlichkeit als Maß für die Ähnlichkeit zwischen zwei Vektoren
 
 --
-#### Foote-Neuheit
+### Foote-Neuheit
+<br/>
 * Maß von Jonathan Foote (2000): <a href="http://www.fxpal.com/publications/FXPAL-PR-00-094.pdf">Foote Novelty</a>
 * ursprünglich für Musik entwickelt
 * Wo gibt es beschleunigte Veränderungen bzw. Umbrüche?
 * auf Grundlage der Kosinus-Ähnlichkeiten werden Neuheits-Werte ermittelt
-
 
 
 
@@ -198,27 +200,28 @@ David Blei, "Probabilistic Topic Modeling", 2012.
 
 --
 ### Kosinus-Ähnlichkeiten &amp; Foote-Neuheiten
+<small>Topics &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zeitausdrücke</small>
 <table>
   <tbody>
     <tr>
       <td style="border: none; vertical-align: bottom; padding: 0 20px;">
         <div style="text-align:center;">
             <a href="img/topics_cosim_v2.png">
-                  <img alt="" src="img/topics_cosim_v2.png" width="330" style="margin: 0;">
+                  <img alt="" src="img/topics_cosim_v2.png" width="310" style="margin: 0;">
             </a>
         </div>
       </td>
       <td style="border: none; vertical-align: bottom; padding: 0 20px;">
         <div style="text-align:center;">
             <a href="img/cosim-tpx-2.png">
-                  <img alt="" src="img/cosim-tpx-2.png" width="330" style="margin: 0;">
+                  <img alt="" src="img/cosim-tpx-2.png" width="310" style="margin: 0;">
             </a>
         </div>
       </td>
     </tr>
     <tr>
-      <td style="vertical-align:top; padding: 0;"><div style="text-align:center;"><a href="img/topics_novelties_v2.png"><img alt="" src="img/topics_novelties_v2.png" width="295" style="position: relative; left: 8px;" height="250"></a></div></td>
-      <td style="vertical-align:top; padding: 0;"><div style="text-align:center;"><a href="img/novelties-tpx-cosine-2.png"><img alt="" src="img/novelties-tpx-cosine-2.png" width="300" style="position: relative; left: 10px;" height="250"></a></div></td>
+      <td style="vertical-align:top; padding: 0;"><div style="text-align:center;"><a href="img/topics_novelties_v2.png"><img alt="" src="img/topics_novelties_v2.png" width="310"  style="position: relative; left: 8px;"></a></div></td>
+      <td style="vertical-align:top; padding: 0;"><div style="text-align:center;"><a href="img/novelties-tpx-cosine-2.png"><img alt="" src="img/novelties-tpx-cosine-2.png" width="310" style="position: relative; left: 10px;"></a></div></td>
     </tr>
   </tbody>
 </table>
@@ -237,27 +240,17 @@ David Blei, "Probabilistic Topic Modeling", 2012.
 ## Fazit
 <br/>
 
-### Eigenschaften der untersuchten Merkmale über die Zeit
-
-* Topics: fortschreitende Veränderung<br/>
-* Zeitausdrücke: kein gleichmäßiger Trend erkennbar
-
+--
+### Ergebnisse
+* Eigenschaften der untersuchten Merkmale über die Zeit
+    * Topics: fortschreitende Veränderung<br/>
+    * Zeitausdrücke: kein Trend erkennbar
+* Epochenschwellen
+    * Erwartungen für Umbruch um den Zweiten Weltkrieg nicht erfüllt
+    * drei Phasen erkennbar: 1900-1930, 1930-1970, 1980-2000
 
 --
-## Fazit
-<br/>
-
-### Epochenschwellen
-
-* Erwartungen für Umbruch um den Zweiten Weltkrieg nicht erfüllt
-* drei Phasen erkennbar: 1900-1930, 1930-1970, 1980-2000
-
---
-## Fazit
-<br/>
-
 ### Methode
-
 * Bedeutung des Korpus: eigentlich repräsentatives Sample nötig
 * Bedeutung der Perspektive: Wahl von Zeitfenstern beeinflusst Ergebnisse
 * näher untersuchen: Welche Relevanz haben die mit Hilfe der digitalen Methoden ermittelten Phasen?
@@ -266,6 +259,8 @@ David Blei, "Probabilistic Topic Modeling", 2012.
 --
 ### Literaturhinweise
 <br/>
+<small>
+    
 * Blei, David M. (2012): "Probabilistic Topic Models." _Communications of the ACM_ 55.4. doi:10.1145/2133806.2133826.
 * Foote, Jonathan (2000): "Automatic Audio Segmentation Using a Measure of Audio Novelty" <span style="font-style: italic;">IEEE International Conference on Multimedia and Expo (I)</span>, IEEE Computer Society, S. 452-458.
 <a href="http://www.fxpal.com/publications/FXPAL-PR-00-094.pdf">http://www.fxpal.com/publications/FXPAL-PR-00-094.pdf</a>
@@ -275,6 +270,7 @@ David Blei, "Probabilistic Topic Modeling", 2012.
 advance literary history.</span>
 Blog-Post. <a href="https://tedunderwood.com/2015/10/03/can-we-date-revolutions-in-the-history-of-literature-and-music/">https://tedunderwood.com/2015/10/03/can-we-date-revolutions-in-the-history-of-literature-and-music/</a>
 
+</small>
 
 
 
